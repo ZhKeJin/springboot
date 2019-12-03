@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>使用bootstrap的表格实例</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body th:inline="text" th:style="'margin: 50px;'">
+
+<div class="container">
+    <table class="table table-dark table-striped">
+    <caption>
+        <a th:href="@{'/all/user'}">添加用户</a>
+    </caption>
+    <thead>
+    <tr>
+        <th>序号</th>
+        <th>昵称</th>
+        <th>电话</th>
+        <th>邮箱</th>
+        <th>地址</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="user : ${userList}">
+
+        <td th:text="${user.id}"></td>
+        <td th:text="${user.nick}"></td>
+        <td>[[${user.phone}]]</td>
+        <td th:text="${user.email}"></td>
+        <td th:text="${user.address}"></td>
+        <td>
+            <a th:href="@{'/all/user/'+${user.id}}">修改</a>
+            <a th:href="'javascript:delectUser(' + ${user.id} + ')'">删除</a>
+
+        </td>
+    </tr>
+
+    <tr th:each="user : ${userList}">
+        <td ></td>
+
+
+    </tr>
+
+
+    <tr>
+        <td colspan="6" th:style="'text-align: center;'">
+            <span th:if="${p le 1}">
+                 首页
+                 上一页
+            </span>
+            <span th:if="${p gt 1}">
+                <a th:href="@{'/all/users'}">首页</a>
+                <a th:href="@{'/all/users?p='+${p - 1}}">上一页</a>
+            </span>
+            <span th:if="${p lt totalPage}">
+                <a th:href="@{'/all/users?p='+${p+1}}">下一页</a>
+                <a th:href="@{'/all/users?p='+${totalPage}}">尾页</a>
+            </span>
+            <span th:if="${p ge totalPage}">
+                  下一页
+                  尾页
+            </span>
+        </td>
+
+    </tr>
+
+
+    <p>
+        <!--<span th:text="${#request.getContextPath()}"></span>-->
+        <!--<span th:text="${#request.getAttribute('userList')}"></span>-->
+
+        <!--<br>-->
+
+    </p>
+    </tbody>
+</table>
+</div>
+<form id="deleteForm" th:method="delete" th:style="'display:none;'">
+
+</form>
+<script th:type="'text/javascript'" th:inline="javascript">
+     function delectUser(id) {
+
+         alert(id);
+
+         var contextPath = [[${#request.getContextPath()}]];
+         $("#deleteForm").attr("action",contextPath+"/all/user/"+id);
+
+         $("#deleteForm").submit();
+     }
+</script>
+
+
+</body>
+</html>

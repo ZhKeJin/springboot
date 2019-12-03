@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/07-springboot-war" />
+    <file type="web" url="file://$PROJECT_DIR$/11-springboot-all-service" />
+    <file type="web" url="file://$PROJECT_DIR$/11-springboot-all-web" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/04-springboot-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/05-springboot-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/06-springboot-dubbo-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/06-springboot-dubbo-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/06-springboot-dubbo-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/07-springboot-war/pom.xml" />
+        <option value="$PROJECT_DIR$/10-springboot-thymeleaf/pom.xml" />
+        <option value="$PROJECT_DIR$/11-springboot-all-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/11-springboot-all-service/pom.xml" />
+        <option value="$PROJECT_DIR$/11-springboot-all-web/pom.xml" />
+        <option value="$PROJECT_DIR$/2-springboot-web/pom.xml" />
+      </list>
+    </option>
+  </component>
+</project>

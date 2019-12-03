@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>堆叠表单</h2>
+    <form th:action="@{/all/user}" th:method="${user == null ? 'post' : 'put'}">
+        <div class="form-group" >
+            <label for="nick">姓名：</label>
+            <input type="text" class="form-control" id="nick" name="nick" placeholder="Enter nick" th:value="${user?.nick}">
+        </div>
+        <div class="form-group">
+            <label for="phone">电话:</label>
+            <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter phone" th:value="${user?.phone}">
+        </div>
+        <div class="form-group">
+            <label for="email">邮箱:</label>
+            <input type="text" class="form-control" id="email" name="email" placeholder="Enter email"  th:value="${user?.email}">
+        </div>
+        <div class="form-group">
+            <label for="address">地址:</label>
+            <input type="text" class="form-control" id="address" name="address" placeholder="Enter address"  th:value="${user?.address}">
+        </div>
+        <input th:type="hidden" id="id" name="id" th:value="${user?.id}">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>

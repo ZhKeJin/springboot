@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/04-springboot-mybatis/04-springboot-mybatis.iml" filepath="$PROJECT_DIR$/04-springboot-mybatis/04-springboot-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05-springboot-redis/05-springboot-redis.iml" filepath="$PROJECT_DIR$/05-springboot-redis/05-springboot-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06-springboot-dubbo-consumer/06-springboot-dubbo-consumer.iml" filepath="$PROJECT_DIR$/06-springboot-dubbo-consumer/06-springboot-dubbo-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06-springboot-dubbo-interface/06-springboot-dubbo-interface.iml" filepath="$PROJECT_DIR$/06-springboot-dubbo-interface/06-springboot-dubbo-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06-springboot-dubbo-provider/06-springboot-dubbo-provider.iml" filepath="$PROJECT_DIR$/06-springboot-dubbo-provider/06-springboot-dubbo-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07-springboot-war/07-springboot-war.iml" filepath="$PROJECT_DIR$/07-springboot-war/07-springboot-war.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10-springboot-thymeleaf/10-springboot-thymeleaf.iml" filepath="$PROJECT_DIR$/10-springboot-thymeleaf/10-springboot-thymeleaf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/11-springboot-all-interface/11-springboot-all-interface.iml" filepath="$PROJECT_DIR$/11-springboot-all-interface/11-springboot-all-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/11-springboot-all-service/11-springboot-all-service.iml" filepath="$PROJECT_DIR$/11-springboot-all-service/11-springboot-all-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/11-springboot-all-web/11-springboot-all-web.iml" filepath="$PROJECT_DIR$/11-springboot-all-web/11-springboot-all-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2-springboot-web/2-springboot-web.iml" filepath="$PROJECT_DIR$/2-springboot-web/2-springboot-web.iml" />
+    </modules>
+  </component>
+</project>

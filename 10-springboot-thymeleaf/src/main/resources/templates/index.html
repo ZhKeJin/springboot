@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Spring boot集成 Thymeleaf</title>
+</head>
+<body th:inline="text">
+
+
+asdfasdfsafdsf
+
+<p>
+    <span th:each="user : ${userlist}">
+        <span th:text="${user.id}"></span>
+        <span th:text="${user.age}"></span>
+        <span th:text="${user.name}"></span>
+        <br>
+    </span>
+</p>
+
+
+循环map集合<br>
+<p>
+
+    <span th:each="userkeyvalue : ${usermap}">
+      <span th:text="${userkeyvalue.key}"></span>
+      <span th:text="${userkeyvalue.value.id}"></span>
+      <span th:text="${userkeyvalue.value.age}"></span>
+      <span th:text="${userkeyvalue.value.name}"></span>
+      <br>
+    </span>
+
+</p>
+
+
+数组
+
+<p>
+    <span th:each="user : ${userArrays}">
+        <span th:text="${user.id}"></span>
+        <span th:text="${user.age}"></span>
+        <span th:text="${user.name}"></span>
+        <br>
+    </span>
+</p>
+
+<p>
+    <span th:switch="${sex}">
+        <span th:case="1">男</span>
+        <span th:case="2">女</span>
+        <span th:case="*">位置</span>
+    </span>
+
+
+</p>
+
+字符串拼接
+<p>
+    <a th:href="@{'/api/user?id='+${user.id}+'&age'+${user.age}}">查看</a>
+
+    竖线分割
+    <a th:href="@{|/api/user?id=${user.id}&age${user.age}|}">查看</a>
+
+    三元运算符
+    <span th:text="${sex == 1 ? '男' : '女'}"></span>
+
+</p>
+
+
+<p>
+    <span th:text="${#request.getContextPath()}"></span>
+    [[${#request.getContentPath()}}]]
+    <br>
+
+</p>
+
+
+
+<p th:text="${msg}">
+
+</p>
+
+
+</body>
+</html>

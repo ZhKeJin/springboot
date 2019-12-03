@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="11-springboot-all-service:war">
+    <output-path>$PROJECT_DIR$/11-springboot-all-service/target</output-path>
+    <root id="archive" name="11-springboot-all-service-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="11-springboot-all-service:war exploded" />
+    </root>
+  </artifact>
+</component>

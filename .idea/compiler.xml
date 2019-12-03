@@ -17,6 +17,7 @@
         <module name="11-springboot-all-service" />
         <module name="11-springboot-all-web" />
         <module name="2-springboot-web" />
+        <module name="springboot_1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -31,6 +32,7 @@
       <module name="11-springboot-all-service" target="1.8" />
       <module name="11-springboot-all-web" target="1.8" />
       <module name="2-springboot-web" target="1.8" />
+      <module name="springboot_1" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

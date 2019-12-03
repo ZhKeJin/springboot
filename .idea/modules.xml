@@ -13,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/11-springboot-all-service/11-springboot-all-service.iml" filepath="$PROJECT_DIR$/11-springboot-all-service/11-springboot-all-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/11-springboot-all-web/11-springboot-all-web.iml" filepath="$PROJECT_DIR$/11-springboot-all-web/11-springboot-all-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/2-springboot-web/2-springboot-web.iml" filepath="$PROJECT_DIR$/2-springboot-web/2-springboot-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_1/springboot_1.iml" filepath="$PROJECT_DIR$/springboot_1/springboot_1.iml" />
     </modules>
   </component>
 </project>

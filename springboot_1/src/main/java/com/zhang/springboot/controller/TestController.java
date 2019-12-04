@@ -19,6 +19,7 @@ public class TestController {
     }
 
     @RequestMapping("/boot/index")
+
     public String hello_1(){
         return "index";
     }

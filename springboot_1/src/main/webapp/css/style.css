@@ -1,0 +1,65 @@
+@charset "utf-8";
+nav {
+	font-size: 50px;
+	color: #ff9d37;
+	text-align: center;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #ff6972;
+}
+div {
+	width: 245px;
+	height: 400px;
+	background-color: #ff6972;
+	margin: 100px auto;
+
+
+}
+p {
+	float: left;   /*浮动  横排显示  宽度不够自动换行 一个左浮动一个右浮动*/
+	width: 25px;
+	height: 25px;
+	margin-right: 2px;   /*竖边距*/
+	margin-bottom: 2px;  /*横边距*/
+	/*border: 1px solid red;*/
+	background-color: #fff;
+	border-radius: 3px;
+	animation: love 4s infinite;  /*动画  名称  时间/infinite无限动*/
+	transform: translateY(-280px);   /*往上流动*/
+	opacity: 0;
+
+}
+@keyframes love {
+	25%,50%,70% { transform: translateY(0); opacity: 1}   /* 停留*/
+
+	100%{ transform: translateY(280px); opacity: 0}
+
+}
+.opacity {
+	background: no-repeat; /*去掉背景颜色*/
+}
+.delay1 {
+	animation-delay: .1s;  /*动画延迟了0.1秒时间*/
+}
+.delay2 {
+	animation-delay: .2s;
+}
+.delay3 {
+	animation-delay: .3s;
+}
+.delay4 {
+	animation-delay: .4s;
+}
+.delay5 {
+	animation-delay: .3s;
+}
+.delay6 {
+	animation-delay: .2s;
+}
+.delay7 {
+	animation-delay: .3s;
+}
